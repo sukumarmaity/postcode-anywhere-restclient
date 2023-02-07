@@ -18,6 +18,7 @@ package uk.co.techblue.postcodeanywhere;
 import uk.co.techblue.postcodeanywhere.exception.LookupException;
 import uk.co.techblue.postcodeanywhere.service.BankAccountValidationService;
 import uk.co.techblue.postcodeanywhere.service.CapturePlusService;
+import uk.co.techblue.postcodeanywhere.service.CaptureServiceImpl;
 import uk.co.techblue.postcodeanywhere.service.GeocodeService;
 
 /**
@@ -37,9 +38,9 @@ public class LookupServiceTest {
      * Test capture plus find.
      */
     private static void testCapturePlusFind() {
-        final CapturePlusService capturePlusService = new CapturePlusService(POSTCODE_SERVICE_HOST_URI);
+        final CaptureServiceImpl capturePlusService = new CaptureServiceImpl(POSTCODE_SERVICE_HOST_URI);
         try {
-            System.out.println(capturePlusService.getCapturePlusFindRecords(LICENSE_KEY, "WR2 6NJ", "engsdf"));
+            System.out.println(capturePlusService.getCaptureFindRecords(LICENSE_KEY, "CV3 4GW", "UK",null,null,null));
         } catch (final LookupException e) {
             e.printStackTrace();
         }

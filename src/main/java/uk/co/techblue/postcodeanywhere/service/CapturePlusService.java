@@ -29,7 +29,7 @@ import uk.co.techblue.postcodeanywhere.resource.CapturePlusResource;
  *
  * @author <a href="mailto:dheeraj.arora@techblue.co.uk">Dheeraj Arora</a>
  */
-
+@Deprecated
 public class CapturePlusService extends Service<CapturePlusResource> {
 
     /**

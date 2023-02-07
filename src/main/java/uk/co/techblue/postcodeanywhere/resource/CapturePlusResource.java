@@ -32,6 +32,7 @@ import uk.co.techblue.postcodeanywhere.Resource;
  *
  * @author <a href="mailto:dheeraj.arora@techblue.co.uk">Dheeraj Arora</a>
  */
+@Deprecated
 @Path("/CapturePlus/Interactive")
 public interface CapturePlusResource extends Resource {
 

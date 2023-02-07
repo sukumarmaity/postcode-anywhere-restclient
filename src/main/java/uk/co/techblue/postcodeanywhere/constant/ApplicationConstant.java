@@ -27,4 +27,7 @@ public interface ApplicationConstant {
 
     /** The banking service version. */
     String BANKING_SERVICE_VERSION = "v2.00";
+    
+    String SERVICE_VERSION_1_1 = "v1.10";
+    String SERVICE_VERSION_1_2 = "v1.20";
 }

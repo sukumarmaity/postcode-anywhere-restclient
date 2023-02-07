@@ -26,6 +26,7 @@ import uk.co.techblue.postcodeanywhere.dto.BaseDto;
  *
  * @author <a href="mailto:dheeraj.arora@techblue.co.uk">Dheeraj Arora</a>
  */
+@Deprecated
 public class CapturePlusFindResponse extends BaseDto {
 
     /** The Constant serialVersionUID. */
